@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/index-modal.css">
+  <link rel="stylesheet" href="/styles/index-icon-contacto.css">
+  <title>Preparación Física Integral</title>
+</head>
+
+<body translate="no" class="body" ">
+
+  <div class=" contenedorPrincipal">
+  <title id="inicio_titulo_id" class="inicio_titulo">
+    Luciana Morúa
+  </title>
+
+  <p id="p">Entrenamiento Personal y Grupal</p>
+
+  </div>
+  <section class="section_nav">
+    <nav class="nav_menu">
+      <ul id="menu_horizontal_id" class="menu_horizontal">
+        <li class="main_menu_item">
+          <a href="/planes-entrenamiento/planes.html" class="main_menu_link">
+            <img class="main_menu_icon" src="/image/EntrenadoraHaceRutina.png" alt="">
+            Planes Entrenamiento
+          </a>
+          <!--
+          <ul class="menu_vertical">
+            <li>
+              <a href="#" class="item_vertical">* Tipos de planes</a>
+              <a href="#" class="item_vertical">* Plan Grupal</a>
+              <a href="#" class="item_vertical">* Plan Casa</a>
+              <a href="#" class="item_vertical">* Plan Gimnasio</a>
+              <a href="#" class="item_vertical">* Circuitos</a>
+            </li>
+          </ul>-->
+        </li>
+
+        <li class="main_menu_item">
+          <a href="#lugar-contacto" class="main_menu_link">
+            <img class="main_menu_icon" src="/icons/Contacto.png" alt="">
+            Para Contactarnos
+          </a>
+        </li>
+
+        <li class="main_menu_item">
+          <a href="#" class="main_menu_link">
+            <img class="main_menu_icon" src="/icons/information.png" alt="">
+            Información de Interes
+          </a>
+          <ul class="menu_vertical">
+            <li>
+              <a href="/informacion-interes/alimentacion.html" class="item_vertical">* Alimentación Sana</a>
+              <a href="/informacion-interes/recetas.html" class="item_vertical">* Recetas Sanas</a>
+              <!--<a href="#" class="item_vertical">* Cómo Ejercitarnos</a>-->
+              <a href="/informacion-interes/habitos.html" class="item_vertical">* Hábitos Saludables</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </section>
+
+
+  <section class="container_columnas">
+
+    <div class="left_column">
+      <img src="/image/manoMancuerna.png" alt="Imagen mano sosteniendo mancuerna">
+    </div>
+    <div class="right_column">
+
+      <p>Contenido de la columna derecha. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quo, magni architecto harum iste eveniet quaerat tempore beatae esse quas non assumenda ea nam ipsum dolor, ex dolorum inventore veniam?
+      </p>
+    </div>
+  </section>
+
+  <div>
+    <button id="volverArribaBtn" title="Subir">
+      <img src="/icons/flechaVolver.png" alt="">
+    </button>
+  </div>
+
+  <hr id="linea-horizontal-footer">
+  <div class="foto-divisoria-footer">
+    <img  src="/image/MujerEjercitando.png" alt="">
+    <img  src="/image/GrupoEjercitando.png" alt="">
+    <img  src="/image/MujerEjercitando2.png" alt="">
+  </div>
+  <hr id="linea-fin-horizontal-footer">
+
+
+
+  <script src="/js/index.js"></script>
+  <script src="/js/ventanaModal.js"></script>
+
+</body>
+<footer class="footer">
+  <section class="section-principal-contacto" id="lugar-contacto">
+    <div id="seccion_contacto">
+      <p id="contactos">Contactenos:</p>
+      <div id="boton-modal" class="iconos-redes">
+        <label for="btn-modal">
+            <img class="iconos-red-contacto" src="/icons/WhatsApp.png" alt="" title="CLICK PARA INGRESAR">
+        </label>
+        <div id="whatsApp" title="Presione Ícono para acceder">WhatsApp</div>
+      </div>
+      <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+          <div class="content-modal">
+            <h2>Comunicarse mediante whatsApp</h2>
+           
+            <a href="https://api.whatsapp.com/send?phone=541137042115&text=Hola, me interesa el plan de entreñamiento, solicito más información por favor !!!" id="enviar-whatsapp">ENVIAR MENSAJE</a>
+            <div class="btn-cerrar">
+              <label for="btn-modal">Cerrar</label>
+            </div>
+          </div>
+        </div>
+  
+        <div id="boton-modal2" class="iconos-redes">
+          <label for="btn-modal2">
+            <img id="modificar-icono" class="iconos-red-contacto" src="/icons/Email.png" alt=""
+            title="CLICK PARA INGRESAR">
+          </label>
+          <div id="correoEmail" title="Presione Ícono para información">Correo</div>
+        </div>
+        <input type="checkbox" id="btn-modal2">
+          <div class="container-modal2">
+            <div class="content-modal2">
+              <h2>Datos del Correo Electrónico</h2>
+              <h3>correoEjemplo@prueba.com.ar</h3>
+              <div class="btn-cerrar2">
+                <label for="btn-modal2">Cerrar</label>
+              </div>
+            </div>
+          </div>
+  
+          <div id="boton-modal3" class="iconos-redes">
+            <label for="btn-modal3">
+              <img id="modificar-icono" class="iconos-red-contacto" tabindex="autofocus" src="/icons/telefono.png" alt=""
+              title="CLICK PARA INGRESAR">
+            </label>
+          <div id="telefono" title="Presione Ícono para información">Teléfono</div>
+          </div>
+          <input type="checkbox" id="btn-modal3">
+            <div class="container-modal3">
+              <div class="content-modal3">
+                <h2>Datos del Teléfono Llamado</h2>
+                <h3>+54(011) 4956-ejemplo</h3>
+                <div class="btn-cerrar3">
+                  <label for="btn-modal3">Cerrar</label>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- AGREGADO ANTES DE VERSIONAR EN GIT
+
+            <div id="boton-modal4" class="iconos-redes">
+              <label for="btn-modal4">
+                <img id="modificar-icono" class="iconos-red-contacto" tabindex="autofocus" src="/icons/Instagram.png" alt=""
+                title="CLICK PARA INGRESAR">
+              </label>
+            <div id="instagram" title="Presione Ícono para información">Instagram</div>
+            </div>
+            <input type="checkbox" id="btn-modal4">
+              <div class="container-modal4">
+                <div class="content-modal4">
+                  <h2>Ingrese a Instagram</h2>
+                  <h3>Dirección de Instagram</h3>
+                  <div class="btn-cerrar4">
+                    <label for="btn-modal4">Cerrar</label>
+                  </div>
+                </div>
+              </div>
+              -->
+
+              
+      <div class="texto-section-contacto">
+        <p id="textoLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat repellendus praesentium maiores! Aut, omnis dolorum? Rem magni asperiores, cum dolores fugiat explicabo, atque libero, illum dolorem vero quisquam ullam non!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab architecto voluptatem vero? Quos vitae voluptatum quo quaerat aliquid recusandae debitis expedita numquam, excepturi modi cumque unde nemo ducimus laboriosam officia.
+        </p>
+        
+      </div>
+    </div>
+    </section>
+
+  </section>
+  
+
+  
+
+</footer>
+
+</html>

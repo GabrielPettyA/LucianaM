@@ -1,0 +1,427 @@
+
+/* INICIO BOTONES MODAL STYLES */
+
+/* Boton-1 WhatsApp */
+.boton-modal{
+  padding: 40px;
+  background-color: white;
+  width: 100%;
+}
+/*
+.boton-modal label{
+  padding: 30px 30px;
+  background-color: #5888a3;
+  color: #ff0000;
+  cursor: pointer;
+}
+*/
+#btn-modal{
+  display: none;
+  width: 100%;
+}
+/*
+.iconos-redes{
+  margin-top: 15%;
+  margin-left: -25%;
+  max-width: 1024px;
+  min-width: 200px;
+}
+*/
+.container-modal{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal:checked ~.container-modal{
+  display: flex;
+}
+/* Ventana Interna del Modal (donde se muestra el texto) */
+.content-modal{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #dcdfe0;
+  border-radius: 4px;
+}
+.content-modal h2{
+  margin-bottom: 15px;
+}
+.content-modal p{
+  padding: 15px 0px;
+  border-top: 1px solid #6d6b6b;
+  border-bottom: 1px solid #494848;
+}
+/* Inicio Botón de Cierre del Modal */
+.content-modal .btn-cerrar{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.content-modal .btn-cerrar label{
+  padding: 7px 10px;
+  background-color: #93afbe;
+  color: #000000;
+  border-radius: 4px;
+  border: darkblue;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: .4px .3px 5px rgb(58, 27, 27);
+}
+.content-modal .btn-cerrar label:hover{
+  background-color: #285731;
+  color: white;
+  box-shadow: -1.8px -1.9px 2px rgb(255, 255, 255);
+  /*border-bottom-style: solid;*/
+  /*border-right-style: solid;*/
+  /*border-width: .07cm;*/
+  border-right-color: black;
+  border-bottom-color: black;
+  border-top-color: white;
+  border-left-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: none;
+  /*scale: .93px;
+  margin-top: 1px;
+  margin-left: 3px;*/
+}
+.cerrar-modal{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+/* Responsive para celular */
+@media screen and(max-width:800px){
+  .content-modal{
+    width: 90%;
+  }
+}
+
+
+/* INICIO BOTON MODAL-2 CORREO ELECTRÓNICO */
+.boton-modal2{
+  padding: 40px;
+  background-color: white;
+}
+/*
+.boton-modal2 label{
+  padding: 10px 15px;
+  background-color: #5888a3;
+  color: #ff0000;
+  cursor: pointer;
+}
+*/
+#btn-modal2{
+  display: none;
+}
+#whatsApp{
+  color: white;
+  display: flex;
+  float:left;
+  margin-top: 15%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+#correoEmail{
+  color: white;
+  display: flex;
+  float:left;
+  margin-top: 15%;
+  margin-right: 11%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+#telefono{
+  color: white;
+  display: flex;
+  float:left;
+  margin-top: 15%;
+  margin-right: 7%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.container-modal2{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal2:checked ~.container-modal2{
+  display: flex;
+}
+/* Ventana Interna del Modal (donde se muestra el texto) */
+.content-modal2{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.content-modal2 h2{
+  margin-bottom: 15px;
+}
+.content-modal2 p{
+  padding: 15px 0px;
+  border-top: 1px solid #6d6b6b;
+  border-bottom: 1px solid #494848;
+}
+/* Inicio Botón de Cierre del Modal */
+.content-modal2 .btn-cerrar2{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.content-modal2 .btn-cerrar2 label{
+  padding: 7px 10px;
+  background-color: #93afbe;
+  color: #000000;
+  border-radius: 4px;
+  border: darkblue;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: .4px .3px 5px rgb(58, 27, 27);
+}
+.content-modal2 .btn-cerrar2 label:hover{
+  background-color: #285731;
+  color: white;
+  box-shadow: -1.8px -1.9px 2px rgb(255, 255, 255);
+  /*border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: .07cm;*/
+  border-right-color: black;
+  border-bottom-color: black;
+  border-top-color: white;
+  border-left-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: none;
+  /*scale: .93;
+  margin-top: 1px;
+  margin-left: 3px;*/
+}
+.cerrar-modal2{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+/* Responsive para celular */
+@media screen and(max-width:800px){
+  .content-modal2{
+    width: 90%;
+  }
+}
+
+
+
+/* INICIO BOTON MODAL-3 TELÉFONO LLAMADO */
+.boton-modal3{
+  padding: 40px;
+  background-color: white;
+}
+/*
+.boton-modal3 label{
+  padding: 10px 15px;
+  background-color: #5888a3;
+  color: #ff0000;
+  cursor: pointer;
+}
+*/
+#btn-modal3{
+  display: none;
+}
+.container-modal3{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal3:checked ~.container-modal3{
+  display: flex;
+}
+/* Ventana Interna del Modal (donde se muestra el texto) */
+.content-modal3{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.content-modal3 h2{
+  margin-bottom: 15px;
+}
+.content-modal3 p{
+  padding: 15px 0px;
+  border-top: 1px solid #6d6b6b;
+  border-bottom: 1px solid #494848;
+}
+/* Inicio Botón de Cierre del Modal */
+.content-modal3 .btn-cerrar3{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.content-modal3 .btn-cerrar3 label{
+  padding: 7px 10px;
+  background-color: #93afbe;
+  color: #000000;
+  border-radius: 4px;
+  border: darkblue;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: .4px .3px 5px rgb(58, 27, 27);
+}
+.content-modal3 .btn-cerrar3 label:hover{
+  background-color: #285731;
+  color: white;
+  box-shadow: -1.8px -1.9px 2px rgb(255, 255, 255);
+  /*border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: .07cm;*/
+  border-right-color: black;
+  border-bottom-color: black;
+  border-top-color: white;
+  border-left-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: none;
+  /*scale: .93;
+  margin-top: 1px;
+  margin-left: 3px;*/
+}
+.cerrar-modal3{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+/* Responsive para celular */
+@media screen and(max-width:800px){
+  .content-modal3{
+    width: 90%;
+  }
+}
+
+
+/* ESTO ES LO QUE SE AGREGÓ ÚLTIMO ANTES DE VERSIONAR EN GIT */
+/* INICIO BOTON MODAL-4 INSTAGRAM */
+.boton-modal4{
+  padding: 40px;
+  background-color: white;
+}
+/*
+.boton-modal4 label{
+  padding: 10px 15px;
+  background-color: #5888a3;
+  color: #ff0000;
+  cursor: pointer;
+}
+*/
+#btn-modal4{
+  display: none;
+}
+.container-modal4{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal4:checked ~.container-modal4{
+  display: flex;
+}
+/* Ventana Interna del Modal (donde se muestra el texto) */
+.content-modal4{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.content-modal4 h2{
+  margin-bottom: 15px;
+}
+.content-modal4 p{
+  padding: 15px 0px;
+  border-top: 1px solid #6d6b6b;
+  border-bottom: 1px solid #494848;
+}
+/* Inicio Botón de Cierre del Modal */
+.content-modal4 .btn-cerrar4{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.content-modal4 .btn-cerrar4 label{
+  padding: 7px 10px;
+  background-color: #93afbe;
+  color: #000000;
+  border-radius: 4px;
+  border: darkblue;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: .4px .3px 5px rgb(58, 27, 27);
+}
+.content-modal4 .btn-cerrar4 label:hover{
+  background-color: #285731;
+  color: white;
+  box-shadow: -1.8px -1.9px 2px rgb(255, 255, 255);
+  /*border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: .07cm;*/
+  border-right-color: black;
+  border-bottom-color: black;
+  border-top-color: white;
+  border-left-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: none;
+  /*scale: .93;
+  margin-top: 1px;
+  margin-left: 3px;*/
+}
+.cerrar-modal4{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+/* Responsive para celular */
+@media screen and(max-width:800px){
+  .content-modal4{
+    width: 90%;
+  }
+}

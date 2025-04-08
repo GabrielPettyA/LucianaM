@@ -1,0 +1,62 @@
+/* INICIO ICONOS DE CONTACTO */
+.iconos-redes{
+  width: 10%;
+  height: auto;
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  flex-direction: column;  
+}
+.iconos-redes{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+.iconos-red-contacto{
+  width: 70px;
+  height: auto;
+  margin: 25px 80px 18px 50px;
+  transition: transform 1s;
+  cursor: pointer;
+}
+.iconos-red-contacto:hover{
+  transform: rotateY(360deg);
+  margin-top: 25px;
+}
+#modificar-icono{
+  width: 58px;
+  height: auto;
+}
+#modificar-icono2{
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 50px;
+  width: 45px;
+}
+#enviar-whatsapp{
+  width: 300px;
+  height: 50px;
+  color: black;
+  background-color: rgb(201, 201, 201);
+  box-shadow: 2px 1px 4px black;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: .1cm;
+  border-style: inset;
+  padding: 1%;
+  transition: all .1s ease-in-out;
+}
+a#enviar-whatsapp:hover{
+  /*width: 300px;
+  height: 50px;*/
+  color: black;
+  background-color: rgb(201, 201, 201);
+  box-shadow: 0px -0px 0px black;
+  text-shadow: none;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: .09cm;
+  border-style: inset;
+  padding: 1.25%;
+}
+
